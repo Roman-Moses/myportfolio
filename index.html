@@ -139,11 +139,12 @@
                 <h2>Contact <span>Me</span></h2>
                </div>
                <div class="contact-form">
-                <form action="">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Write message hear" required></textarea>
-                    <input type="submit" value="send a message" class="message-btn">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="db5d1a98-8910-487a-bd4b-04cd1ba34e72">
+                    <input type="text" placeholder="Your Name" required name="name">
+                    <input type="email" placeholder="Email Address" required name="email">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Write message hear" required></textarea>
+                    <button class="message-btn">Send Message</button>
                 </form>
                 
                </div>
